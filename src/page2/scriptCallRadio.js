@@ -73,7 +73,7 @@ btnNext.setAttribute('id', 'nextBtn');
 
 
 document.getElementById("nextBtn").onclick = function () {
-    location.href = "../page4/goToLibrary.html";
+    location.href = "../bundle/page4.html";
 };
 
 //src\page4

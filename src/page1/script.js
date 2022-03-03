@@ -78,11 +78,11 @@ btnNo.setAttribute('id', 'nopBtn');
 
 
 document.getElementById("yesBtn").onclick = function () {
-    location.href = "../page2/callRadio.html";
+    location.href = "../bundle/page2.html";
 };
 
 document.getElementById("nopBtn").onclick = function () {
-    location.href = "../page3/boring.html";
+    location.href = "../bundle/page3.html";
 };
 
 divQ.setAttribute('id', 'divQ');

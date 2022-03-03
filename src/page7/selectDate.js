@@ -78,23 +78,23 @@ btnDate5.setAttribute('id', 'date5Btn');
 
 
 document.getElementById("date1Btn").onclick = function () {
-    location.href = "../page8/nope2.html";
+    location.href = "../bundle/page8.html";
 };
 
 document.getElementById("date2Btn").onclick = function () {
-    location.href = "../page10/selectTime.html";
+    location.href = "../bundle/page10.html";
 };
 
 document.getElementById("date3Btn").onclick = function () {
-    location.href = "../page8/nope2.html";
+    location.href = "../bundle/page8.html";
 };
 
 document.getElementById("date4Btn").onclick = function () {
-    location.href = "../page8/nope2.html";
+    location.href = "../bundle/page8.html";
 };
 
 document.getElementById("date5Btn").onclick = function () {
-    location.href = "../page8/nope2.html";
+    location.href = "../bundle/page8.html";
 };
 
 

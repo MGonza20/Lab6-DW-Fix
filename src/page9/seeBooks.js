@@ -76,5 +76,5 @@ backBtn.append("back");
 backBtn.setAttribute('id', 'backBtn');
 
 document.getElementById("backBtn").onclick = function () {
-    location.href = "../page10/selectTime.html";
+    location.href = "../bundle/page10.html";
 };

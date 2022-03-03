@@ -46,7 +46,7 @@ btnTrip.setAttribute('id', 'tripBtn');
 
 
 document.getElementById("tripBtn").onclick = function () {
-    location.href = "../page12/welcomeToNYC.html";
+    location.href = "../bundle/page12.html";
 };
 
 

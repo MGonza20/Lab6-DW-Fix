@@ -64,7 +64,7 @@ tRow.append(tD3);
 
 tD1.append(fig1);
 fig1.append(anch1);
-anch1.setAttribute('href', '../page6/nope.html');
+anch1.setAttribute('href', '../bundle/page6.html');
 anch1.append(img1);
 img1.setAttribute('src', '../../../images/general/toscanaItalia2.jpg');
 img1.setAttribute('width', '350');
@@ -73,7 +73,7 @@ fig1.append("Viajes, Toscana");
 
 tD2.append(fig2);
 fig2.append(anch2);
-anch2.setAttribute('href', '../page7/selectDate.html');
+anch2.setAttribute('href', '../bundle/page7.html');
 anch2.append(img2);
 img2.setAttribute('src', '../../../images/general/TheNewYorker.jpg');
 img2.setAttribute('width', '375');
@@ -82,7 +82,7 @@ fig2.append("The New Yorker, New York");
 
 tD3.append(fig3);
 fig3.append(anch3);
-anch3.setAttribute('href', '../page6/nope.html');
+anch3.setAttribute('href', '../bundle/page6.html');
 anch3.append(img3);
 img3.setAttribute('src', '../../../images/general/tailand.jpg');
 img3.setAttribute('width', '375');
