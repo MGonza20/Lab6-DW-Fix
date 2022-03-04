@@ -20,7 +20,7 @@ module.exports = {
   
   
   output: {
-    filename: "[name].[hash].bundle.js",
+    filename: "[name].bundle.js",
     path: path.resolve(__dirname, "bundle"), 
   },
   

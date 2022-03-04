@@ -63,7 +63,7 @@ text.append('Tu llamada ha entrado a la radio y el locutor te dice: \
 
 
 
-img.setAttribute('src', {imgCall});
+img.setAttribute('src', imgCall);
 img.setAttribute('width', '245px');
 imgD.appendChild(img);
 
