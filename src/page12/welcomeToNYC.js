@@ -1,3 +1,5 @@
+
+
 //Colocar body
 const body = document.body;
 //Hacer un div para colocar elementos

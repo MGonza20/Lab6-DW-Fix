@@ -1,6 +1,7 @@
+import "../main.css";
 
 //Colocar body
-const body = document.body;
+const body = document.body; 
 
 //Hacer un div para colocar elementos
 const div = document.createElement('div');

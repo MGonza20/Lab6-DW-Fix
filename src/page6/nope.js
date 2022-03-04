@@ -3,7 +3,6 @@ const body = document.body;
 
 //Hacer un div para colocar elementos
 const div = document.createElement('div');
-
 const divTitle = document.createElement('div');
 
 //Crear elemento para colocar titulo
