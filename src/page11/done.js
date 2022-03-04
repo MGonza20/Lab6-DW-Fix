@@ -1,3 +1,5 @@
+import imgDone from "../images/misionCumplida.gif";
+
 //Colocar body
 const body = document.body;
 
@@ -34,7 +36,7 @@ div.append(imgD);
 
 
 imgD.append(img);
-img.setAttribute('src', './images/misionCumplida.gif');
+img.setAttribute('src', {imgDone});
 img.setAttribute('width', '400px');
 
 

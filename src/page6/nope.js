@@ -1,3 +1,5 @@
+import imgNope from "../images/sadFacee.gif";
+
 //Colocar body
 const body = document.body;
 
@@ -33,7 +35,7 @@ div.append(imgD);
 
 
 imgD.append(img);
-img.setAttribute('src', './images/sadFacee.gif');
+img.setAttribute('src', {imgNope});
 img.setAttribute('width', '300px');
 
 

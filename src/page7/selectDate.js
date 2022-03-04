@@ -1,3 +1,5 @@
+import imgCalendar from "../images/calendar.gif";
+
 //Colocar body
 const body = document.body;
 
@@ -46,7 +48,7 @@ div.append(imgD);
 
 
 imgD.append(img);
-img.setAttribute('src', './images/calendar.gif');
+img.setAttribute('src', {imgCalendar});
 
 
 //Pregunta

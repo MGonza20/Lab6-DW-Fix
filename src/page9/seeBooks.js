@@ -1,3 +1,7 @@
+import imgDuneBook from "../images/duneBook.jpg";
+import imgPiBook from "../images/midnight.jpg";
+import imgMidnightBook from "../images/pi.jpg";
+
 //Crear body
 const body = document.body;
 
@@ -53,21 +57,21 @@ div.append(backBtn);
 
 tD1.append(fig1);
 fig1.append(img1);
-img1.setAttribute('src', './images/midnight.jpg');
+img1.setAttribute('src', {imgMidnightBook});
 img1.setAttribute('width', '300');
 fig1.append(figCap1);
 fig1.append("The midnight library");
 
 tD2.append(fig2);
 fig2.append(img2);
-img2.setAttribute('src', './images/duneBook.jpg');
+img2.setAttribute('src', {imgDuneBook});
 img2.setAttribute('width', '275');
 fig2.append(figCap2);
 fig2.append("Dune");
 
 tD3.append(fig3);
 fig3.append(img3);
-img3.setAttribute('src', './images/pi.jpg');
+img3.setAttribute('src', {imgMidnightBook});
 img3.setAttribute('width', '300');
 fig3.append(figCap3);
 fig3.append("The life of pi");

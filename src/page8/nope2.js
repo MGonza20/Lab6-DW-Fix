@@ -1,3 +1,5 @@
+import imgNope2 from "../images/nope.gif";
+
 //Colocar body
 const body = document.body;
 //Hacer un div para colocar elementos
@@ -18,7 +20,7 @@ title.append('Opción incorrecta. Has perdido tu oportunidad');
 div.append(imgD);
 imgD.append(img);
 
-img.setAttribute('src', './images/nope.gif');
+img.setAttribute('src', {imgNope2});
 img.setAttribute('width', '320px');
 
 

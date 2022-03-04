@@ -1,4 +1,4 @@
-
+import imgNYC from "../images/ny.png";
 
 //Colocar body
 const body = document.body;
@@ -20,7 +20,7 @@ title.append('¡Bienvenid@ a NYC!');
 div.append(imgD);
 imgD.append(img);
 
-img.setAttribute('src', './images/ny.png');
+img.setAttribute('src', {imgNYC});
 img.setAttribute('width', '600px');
 
 

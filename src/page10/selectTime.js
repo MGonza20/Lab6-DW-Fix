@@ -1,3 +1,5 @@
+import imgTiktok from "../images/tiktok.gif";
+
 //Colocar body
 const body = document.body;
 
@@ -50,7 +52,7 @@ div.append(imgD);
 
 
 imgD.append(img);
-img.setAttribute('src', './images/tiktok.gif');
+img.setAttribute('src', {imgTiktok});
 
 //Colocar div donde se colocara texto
 div.append(textDiv);
