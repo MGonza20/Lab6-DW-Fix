@@ -3,10 +3,7 @@ const body = document.body;
 
 //Hacer un div para colocar elementos
 const div = document.createElement('div');
-const divTitle = document.createElement('div');
 
-//Crear elemento para colocar titulo
-const title = document.createElement('h1');
 
 //Crear elemento para img
 const img = document.createElement('img');
@@ -18,34 +15,29 @@ const br = document.createElement('br');
 
 //div para colocar pregunta
 const divQ = document.createElement('div');
-const btnBack = document.createElement('button');
+const btnTrip = document.createElement('button');
+const btnNo = document.createElement('button');
 const imgD = document.createElement('div');
 
 body.append(div);
 
-//Colocar titulo
-div.append(divTitle);
-divTitle.append(title);
-title.append('Esta pista no te lleva a la sisguiente...');
-
 
 div.append(imgD);
-
-
 imgD.append(img);
-img.setAttribute('src', './images/sadFacee.gif');
-img.setAttribute('width', '300px');
+img.setAttribute('src', 'https://media.giphy.com/media/ehJ4vNWRhinhMMvLxp/giphy.gif');
+img.setAttribute('width', '500px');
 
 
+//Pregunta
 body.append(divQ);
 divQ.append(br);
-divQ.append(btnBack);
-btnBack.append("Back");
-btnBack.setAttribute('id', 'backBtn');
+divQ.append(btnTrip);
+btnTrip.append("Back");
+btnTrip.setAttribute('id', 'backBtn');
 
 
 document.getElementById("backBtn").onclick = function () {
-    location.href = "../bundle/page5.html";
+    location.href = "../bundle/page1.html";
 };
 
 

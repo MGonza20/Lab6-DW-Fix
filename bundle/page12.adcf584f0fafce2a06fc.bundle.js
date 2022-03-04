@@ -9,13 +9,13 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/page8/nope2.js":
-/*!****************************!*\
-  !*** ./src/page8/nope2.js ***!
-  \****************************/
+/***/ "./src/page12/welcomeToNYC.js":
+/*!************************************!*\
+  !*** ./src/page12/welcomeToNYC.js ***!
+  \************************************/
 /***/ (() => {
 
-eval("//Colocar body\nconst body = document.body;\n//Hacer un div para colocar elementos\nconst div = document.createElement('div');\nconst divTitle = document.createElement('div');\n//Crear elemento para colocar titulo\nconst title = document.createElement('h1');\n//Crear elemento para img\nconst img = document.createElement('img');\nconst imgD = document.createElement('div');\n\n\nbody.append(div);\n//Colocar titulo\ndiv.append(divTitle);\ndivTitle.append(title);\ntitle.append('Opción incorrecta. Has perdido tu oportunidad');\ndiv.append(imgD);\nimgD.append(img);\n\nimg.setAttribute('src', '../../../images/general/nope.gif');\nimg.setAttribute('width', '320px');\n\n\n\n\n//# sourceURL=webpack://Lab6.1/./src/page8/nope2.js?");
+eval("\n\n//Colocar body\nconst body = document.body;\n//Hacer un div para colocar elementos\nconst div = document.createElement('div');\nconst divTitle = document.createElement('div');\n//Crear elemento para colocar titulo\nconst title = document.createElement('h1');\n//Crear elemento para img\nconst img = document.createElement('img');\nconst imgD = document.createElement('div');\n\n\nbody.append(div);\n//Colocar titulo\ndiv.append(divTitle);\ndivTitle.append(title);\ntitle.append('¡Bienvenid@ a NYC!');\ndiv.append(imgD);\nimgD.append(img);\n\nimg.setAttribute('src', './images/ny.png');\nimg.setAttribute('width', '600px');\n\n\n\n\n//# sourceURL=webpack://Lab6.1/./src/page12/welcomeToNYC.js?");
 
 /***/ })
 
@@ -26,7 +26,7 @@ eval("//Colocar body\nconst body = document.body;\n//Hacer un div para colocar e
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/page8/nope2.js"]();
+/******/ 	__webpack_modules__["./src/page12/welcomeToNYC.js"]();
 /******/ 	
 /******/ })()
 ;
