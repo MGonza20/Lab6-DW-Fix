@@ -1,4 +1,4 @@
-import profile from "../images/IWoon.gif";
+import imgCall from "../images/IWoon.gif";
 
 //Colocar body
 const body = document.body;
@@ -63,7 +63,7 @@ text.append('Tu llamada ha entrado a la radio y el locutor te dice: \
 
 
 imgD.append(img);
-img.setAttribute('src', '{profile}');
+img.setAttribute('src', {imgCall});
 img.setAttribute('width', '245px');
 
 //Pregunta
@@ -78,7 +78,6 @@ document.getElementById("nextBtn").onclick = function () {
     location.href = "../bundle/page4.html";
 };
 
-//src\page4
 
 divQ.setAttribute('id', 'divQ');
 divTitle.setAttribute('id', 'divT');

@@ -1,3 +1,5 @@
+import imgLibrarian from "../images/librarian.jpeg";
+
 //Colocar body
 const body = document.body;
 
@@ -69,8 +71,10 @@ text.append('En efecto la bibliotecaria te espera en la biblioteca central a las
             de la estanteria una de las revistas con portada de la ciudad a la que crees que iras".'); 
 
 
+
+
 imgD.append(img);
-img.setAttribute('src', './images/librarian.jpeg');
+img.setAttribute('src', {imgLibrarian});
 img.setAttribute('width', '450px');
 
 divQ.append(dets);
