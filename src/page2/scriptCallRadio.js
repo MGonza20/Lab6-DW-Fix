@@ -62,9 +62,10 @@ text.append('Tu llamada ha entrado a la radio y el locutor te dice: \
 
 
 
-imgD.append(img);
+
 img.setAttribute('src', {imgCall});
 img.setAttribute('width', '245px');
+imgD.appendChild(img);
 
 //Pregunta
 body.append(divQ);
