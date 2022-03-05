@@ -1,3 +1,6 @@
+import "../main.scss";
+import "../orderDivs.scss";
+
 import imgDone from "../images/misionCumplida.gif";
 
 const {bar} = require("../bar.js");
@@ -57,3 +60,4 @@ document.getElementById("tripBtn").onclick = function () {
 
 divQ.setAttribute('id', 'divQ');
 divTitle.setAttribute('id', 'divT');
+imgD.setAttribute('id', 'divImg');

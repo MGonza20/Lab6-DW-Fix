@@ -1,4 +1,5 @@
 import "../main.scss";
+import "../orderDivs.scss";
 
 const {bar} = require("../bar.js");
 const {brElement} = require("../brElement.js");

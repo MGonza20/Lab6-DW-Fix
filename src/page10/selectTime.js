@@ -1,3 +1,6 @@
+import "../main.scss";
+import "../orderDivs.scss";
+
 import imgTiktok from "../images/tiktok.gif";
 
 const {bar} = require("../bar.js");
@@ -108,3 +111,4 @@ divQ.setAttribute('id', 'divQ');
 divTitle.setAttribute('id', 'divT');
 imgD.setAttribute('id', 'divImg');
 text.setAttribute('id', 'text');
+textDiv.setAttribute('id', 'divText');

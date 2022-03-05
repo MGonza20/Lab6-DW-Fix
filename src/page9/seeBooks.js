@@ -1,6 +1,9 @@
+import "../main.scss";
+import "../orderDivs.scss";
+
 import imgDuneBook from "../images/duneBook.jpg";
-import imgPiBook from "../images/midnight.jpg";
-import imgMidnightBook from "../images/pi.jpg";
+import imgMidnightBook from "../images/midnight.jpg";
+import imgPiBook from "../images/pi.jpg";
 
 
 //Crear body
@@ -72,7 +75,7 @@ fig2.append("Dune");
 
 tD3.append(fig3);
 fig3.append(img3);
-img3.setAttribute('src', imgMidnightBook);
+img3.setAttribute('src', imgPiBook);
 img3.setAttribute('width', '300');
 fig3.append(figCap3);
 fig3.append("The life of pi");

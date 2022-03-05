@@ -1,3 +1,5 @@
+import "../main.scss";
+
 import imgMag1 from "../images/toscanaItalia2.jpg";
 import imgMag2 from "../images/TheNewYorker.jpg";
 import imgMag3 from "../images/tailand.jpg";

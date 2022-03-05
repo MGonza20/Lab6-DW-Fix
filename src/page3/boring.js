@@ -1,3 +1,5 @@
+import "../main.scss";
+
 const {brElement} = require("../brElement.js");
 
 //Colocar body

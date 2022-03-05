@@ -1,3 +1,6 @@
+import "../main.scss";
+import "../orderDivs.scss";
+
 import { brElement } from "../brElement";
 import imgLibrarian from "../images/librarian.jpeg";
 

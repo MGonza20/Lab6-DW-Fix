@@ -1,3 +1,6 @@
+import "../main.scss";
+import "../orderDivs.scss";
+
 import imgNYC from "../images/ny.png";
 
 const {bar} = require("../bar.js");
@@ -30,4 +33,5 @@ imgD.append(brElement());
 imgD.append(brElement());
 imgD.append(bar(100));
 
-
+divTitle.setAttribute('id', 'divT');
+imgD.setAttribute('id', 'divImg');

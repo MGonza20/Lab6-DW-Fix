@@ -1,3 +1,6 @@
+import "../main.scss";
+import "../orderDivs.scss";
+
 import imgNope2 from "../images/nope.gif";
 
 //Colocar body

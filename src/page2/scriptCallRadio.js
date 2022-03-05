@@ -1,3 +1,6 @@
+import "../main.scss";
+import "../orderDivs.scss";
+
 import imgCall from "../images/IWoon.gif";
 
 const {bar} = require("../bar.js");

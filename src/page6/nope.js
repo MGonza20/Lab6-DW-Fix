@@ -1,3 +1,6 @@
+import "../main.scss";
+import "../orderDivs.scss";
+
 import imgNope from "../images/sadFacee.gif";
 
 const {brElement} = require("../brElement.js");
