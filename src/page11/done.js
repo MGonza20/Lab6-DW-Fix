@@ -31,7 +31,7 @@ body.append(div);
 //Colocar titulo
 div.append(divTitle);
 divTitle.append(title);
-title.append('Mision cumplida');
+title.append('Misión cumplida');
 
 
 div.append(imgD);

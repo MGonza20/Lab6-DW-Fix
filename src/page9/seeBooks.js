@@ -12,6 +12,8 @@ const body = document.body;
 //Crear un div para colocar elementos
 const div = document.createElement('div');
 
+const divGrid = document.createElement('div');
+
 //Crear tabla 
 const table = document.createElement('table');
 
@@ -49,36 +51,37 @@ const anch3 = document.createElement('a');
 //Create back button
 const backBtn = document.createElement('button');
 
+const {bsGrid} = require("../bsGrid.js");
+
 
 body.append(div);
-div.append(table);
-table.append(tRow);
-tRow.append(tD1);
-tRow.append(tD2);
-tRow.append(tD3);
+div.append(divGrid);
 div.append(backBtn);
 
 
-tD1.append(fig1);
+//tD1.append(fig1);
 fig1.append(img1);
 img1.setAttribute('src', imgMidnightBook);
 img1.setAttribute('width', '300');
 fig1.append(figCap1);
 fig1.append("The midnight library");
 
-tD2.append(fig2);
+//tD2.append(fig2);
 fig2.append(img2);
 img2.setAttribute('src', imgDuneBook);
 img2.setAttribute('width', '275');
 fig2.append(figCap2);
 fig2.append("Dune");
 
-tD3.append(fig3);
+//tD3.append(fig3);
 fig3.append(img3);
 img3.setAttribute('src', imgPiBook);
 img3.setAttribute('width', '300');
 fig3.append(figCap3);
 fig3.append("The life of pi");
+
+divGrid.appendChild(bsGrid(fig1,fig2,fig3));
+
 
 backBtn.append("back");
 backBtn.setAttribute('id', 'backBtn');
