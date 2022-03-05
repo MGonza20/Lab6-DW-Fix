@@ -1,4 +1,4 @@
-import "../main.css";
+import "../main.scss";
 
 const {bar} = require("../bar.js");
 const {brElement} = require("../brElement.js");
