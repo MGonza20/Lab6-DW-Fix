@@ -1,6 +1,11 @@
 import imgMag1 from "../images/toscanaItalia2.jpg";
 import imgMag2 from "../images/TheNewYorker.jpg";
 import imgMag3 from "../images/tailand.jpg";
+import { brElement } from "../brElement";
+
+const {bar} = require("../bar.js");
+
+
 
 //Crear body
 const body = document.body;
@@ -68,27 +73,27 @@ tRow.append(tD3);
 tD1.append(fig1);
 fig1.append(anch1);
 anch1.setAttribute('href', '../bundle/page6.html');
-anch1.append(img1);
-img1.setAttribute('src', {imgMag1});
+img1.setAttribute('src', imgMag1);
 img1.setAttribute('width', '350');
+anch1.appendChild(img1);
 fig1.append(figCap1);
 fig1.append("Viajes, Toscana");
 
 tD2.append(fig2);
 fig2.append(anch2);
 anch2.setAttribute('href', '../bundle/page7.html');
-anch2.append(img2);
-img2.setAttribute('src', {imgMag2});
+img2.setAttribute('src', imgMag2);
 img2.setAttribute('width', '375');
+anch2.appendChild(img2);
 fig2.append(figCap2);
 fig2.append("The New Yorker, New York");
 
 tD3.append(fig3);
 fig3.append(anch3);
 anch3.setAttribute('href', '../bundle/page6.html');
-anch3.append(img3);
-img3.setAttribute('src', {imgMag3});
+img3.setAttribute('src', imgMag3);
 img3.setAttribute('width', '375');
+anch3.append(img3);
 fig3.append(figCap3);
 fig3.append("Viajar, Tailandia");
 
@@ -99,3 +104,6 @@ sum.append('Pistas');
 dets.append(olElement);
 olElement.append(li1);
 li1.append('The New Yorker tiene una fecha.');
+
+div.append(brElement());
+div.append(bar(37.5));

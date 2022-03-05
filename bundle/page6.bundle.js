@@ -20,13 +20,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/brElement.js":
+/*!**************************!*\
+  !*** ./src/brElement.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"brElement\": () => (/* binding */ brElement)\n/* harmony export */ });\nconst brElement = () => {\r\n\r\n    const brElement = document.createElement('br');\r\n    return brElement;\r\n}\n\n//# sourceURL=webpack://Lab6.1/./src/brElement.js?");
+
+/***/ }),
+
 /***/ "./src/page6/nope.js":
 /*!***************************!*\
   !*** ./src/page6/nope.js ***!
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _images_sadFacee_gif__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/sadFacee.gif */ \"./src/images/sadFacee.gif\");\n\n\n//Colocar body\nconst body = document.body;\n\n//Hacer un div para colocar elementos\nconst div = document.createElement('div');\nconst divTitle = document.createElement('div');\n\n//Crear elemento para colocar titulo\nconst title = document.createElement('h1');\n\n//Crear elemento para img\nconst img = document.createElement('img');\n\n//create break\nconst br = document.createElement('br');\n\n\n\n//div para colocar pregunta\nconst divQ = document.createElement('div');\nconst btnBack = document.createElement('button');\nconst imgD = document.createElement('div');\n\nbody.append(div);\n\n//Colocar titulo\ndiv.append(divTitle);\ndivTitle.append(title);\ntitle.append('Esta pista no te lleva a la sisguiente...');\n\n\ndiv.append(imgD);\n\n\nimgD.append(img);\nimg.setAttribute('src', {imgNope: _images_sadFacee_gif__WEBPACK_IMPORTED_MODULE_0__[\"default\"]});\nimg.setAttribute('width', '300px');\n\n\nbody.append(divQ);\ndivQ.append(br);\ndivQ.append(btnBack);\nbtnBack.append(\"Back\");\nbtnBack.setAttribute('id', 'backBtn');\n\n\ndocument.getElementById(\"backBtn\").onclick = function () {\n    location.href = \"../bundle/page5.html\";\n};\n\n\n\n\n//# sourceURL=webpack://Lab6.1/./src/page6/nope.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _images_sadFacee_gif__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/sadFacee.gif */ \"./src/images/sadFacee.gif\");\n\n\nconst {brElement} = __webpack_require__(/*! ../brElement.js */ \"./src/brElement.js\");\n//Colocar body\nconst body = document.body;\n\n//Hacer un div para colocar elementos\nconst div = document.createElement('div');\nconst divTitle = document.createElement('div');\n\n//Crear elemento para colocar titulo\nconst title = document.createElement('h1');\n\n//Crear elemento para img\nconst img = document.createElement('img');\n\n\n\n//div para colocar pregunta\nconst divQ = document.createElement('div');\nconst btnBack = document.createElement('button');\nconst imgD = document.createElement('div');\n\nbody.append(div);\n\n//Colocar titulo\ndiv.append(divTitle);\ndivTitle.append(title);\ntitle.append('Esta pista no te lleva a la sisguiente...');\n\n\ndiv.append(imgD);\n\n\n\nimg.setAttribute('src', _images_sadFacee_gif__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\nimg.setAttribute('width', '300px');\nimgD.appendChild(img);\n\n\nbody.append(divQ);\ndivQ.append(brElement());\ndivQ.append(btnBack);\nbtnBack.append(\"Back\");\nbtnBack.setAttribute('id', 'backBtn');\n\n\ndocument.getElementById(\"backBtn\").onclick = function () {\n    location.href = \"../bundle/page5.html\";\n};\n\n\n\n\n//# sourceURL=webpack://Lab6.1/./src/page6/nope.js?");
 
 /***/ })
 

@@ -1,5 +1,8 @@
 import "../main.css";
 
+const {bar} = require("../bar.js");
+const {brElement} = require("../brElement.js");
+
 //Colocar body
 const body = document.body; 
 
@@ -21,8 +24,7 @@ const img = document.createElement('img');
 const text = document.createElement('p');
 //Div para texto
 const textDiv = document.createElement('div');
-//create break
-const br = document.createElement('br');
+
 
 //texto para subtitulo de pregunta
 const subQuestion = document.createElement('text');
@@ -67,7 +69,7 @@ img.setAttribute('width', '300px');
 //Pregunta
 body.append(divQ);
 divQ.append(bold);
-divQ.append(br);
+divQ.append(brElement());
 divQ.append(btnYes);
 btnYes.append("Si");
 divQ.append(btnNo);
@@ -76,6 +78,9 @@ bold.append(subQuestion);
 subQuestion.append('¿Decides llamar?');
 btnYes.setAttribute('id', 'yesBtn');
 btnNo.setAttribute('id', 'nopBtn');
+divQ.append(brElement());
+divQ.append(brElement());
+divQ.append(bar(0));
 
 
 document.getElementById("yesBtn").onclick = function () {

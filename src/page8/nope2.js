@@ -20,7 +20,7 @@ title.append('Opción incorrecta. Has perdido tu oportunidad');
 div.append(imgD);
 imgD.append(img);
 
-img.setAttribute('src', {imgNope2});
+img.setAttribute('src', imgNope2);
 img.setAttribute('width', '320px');
 
 

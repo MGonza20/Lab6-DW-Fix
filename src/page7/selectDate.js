@@ -1,4 +1,8 @@
+import { brElement } from "../brElement";
 import imgCalendar from "../images/calendar.gif";
+
+const {bar} = require("../bar.js");
+
 
 //Colocar body
 const body = document.body;
@@ -17,10 +21,6 @@ const subtitle = document.createElement('h2');
 //Crear elemento para img
 const img = document.createElement('img');
 
-
-//create break
-const br = document.createElement('br');
-const br2 = document.createElement('br');
 
 //texto para subtitulo de pregunta
 const subQuestion = document.createElement('h2');
@@ -42,33 +42,43 @@ body.append(div);
 div.append(divTitle);
 divTitle.append(title);
 title.append('Segunda búsqueda. Encuentra la fecha');
-
-
 div.append(imgD);
 
 
-imgD.append(img);
-img.setAttribute('src', {imgCalendar});
+img.setAttribute('src', imgCalendar);
+imgD.appendChild(img);
 
 
-//Pregunta
 body.append(divQ);
 divQ.append(bold);
-//divQ.append(br);
+
+
 divQ.append(btnDate1);
 btnDate1.append("6 de Octubre");
-//divQ.append(br);
+
+divQ.append(brElement());
+divQ.append(brElement());
 divQ.append(btnDate2);
 btnDate2.append("19 de Noviembre");
-//divQ.append(br2);
+
+divQ.append(brElement());
+divQ.append(brElement());
 divQ.append(btnDate3);
 btnDate3.append("11 de Julio");
-//
+
+divQ.append(brElement());
+divQ.append(brElement());
 divQ.append(btnDate4);
 btnDate4.append("7 de Junio");
-//
+
+divQ.append(brElement());
+divQ.append(brElement());
 divQ.append(btnDate5);
 btnDate5.append("9 de Marzo");
+
+divQ.append(brElement());
+divQ.append(brElement());
+divQ.append(bar(50));
 
 bold.append(subQuestion);
 subQuestion.append('Basandote en la pista anterior, ¿Qué fecha es?');

@@ -1,5 +1,6 @@
 import imgNope from "../images/sadFacee.gif";
 
+const {brElement} = require("../brElement.js");
 //Colocar body
 const body = document.body;
 
@@ -12,9 +13,6 @@ const title = document.createElement('h1');
 
 //Crear elemento para img
 const img = document.createElement('img');
-
-//create break
-const br = document.createElement('br');
 
 
 
@@ -34,13 +32,14 @@ title.append('Esta pista no te lleva a la sisguiente...');
 div.append(imgD);
 
 
-imgD.append(img);
-img.setAttribute('src', {imgNope});
+
+img.setAttribute('src', imgNope);
 img.setAttribute('width', '300px');
+imgD.appendChild(img);
 
 
 body.append(divQ);
-divQ.append(br);
+divQ.append(brElement());
 divQ.append(btnBack);
 btnBack.append("Back");
 btnBack.setAttribute('id', 'backBtn');

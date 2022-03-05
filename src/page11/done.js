@@ -1,5 +1,8 @@
 import imgDone from "../images/misionCumplida.gif";
 
+const {bar} = require("../bar.js");
+const {brElement} = require("../brElement.js");
+
 //Colocar body
 const body = document.body;
 
@@ -13,10 +16,6 @@ const title = document.createElement('h1');
 
 //Crear elemento para img
 const img = document.createElement('img');
-
-//create break
-const br = document.createElement('br');
-
 
 
 //div para colocar pregunta
@@ -35,14 +34,18 @@ title.append('Mision cumplida');
 div.append(imgD);
 
 
-imgD.append(img);
-img.setAttribute('src', {imgDone});
+
+img.setAttribute('src', imgDone);
 img.setAttribute('width', '400px');
+imgD.appendChild(img);
 
 
 body.append(divQ);
-divQ.append(br);
+divQ.append(brElement());
 divQ.append(btnTrip);
+divQ.append(brElement());
+divQ.append(brElement());
+divQ.append(bar(85));
 btnTrip.append("Viajar a NYC");
 btnTrip.setAttribute('id', 'tripBtn');
 

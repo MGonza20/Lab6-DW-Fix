@@ -1,3 +1,5 @@
+const {brElement} = require("../brElement.js");
+
 //Colocar body
 const body = document.body;
 
@@ -7,9 +9,6 @@ const div = document.createElement('div');
 
 //Crear elemento para img
 const img = document.createElement('img');
-
-//create break
-const br = document.createElement('br');
 
 
 
@@ -23,14 +22,13 @@ body.append(div);
 
 
 div.append(imgD);
-imgD.append(img);
 img.setAttribute('src', 'https://media.giphy.com/media/ehJ4vNWRhinhMMvLxp/giphy.gif');
 img.setAttribute('width', '500px');
-
+imgD.appendChild(img);
 
 //Pregunta
 body.append(divQ);
-divQ.append(br);
+divQ.append(brElement());
 divQ.append(btnTrip);
 btnTrip.append("Back");
 btnTrip.setAttribute('id', 'backBtn');

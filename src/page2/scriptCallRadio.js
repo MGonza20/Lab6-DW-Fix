@@ -1,5 +1,9 @@
 import imgCall from "../images/IWoon.gif";
 
+const {bar} = require("../bar.js");
+const {brElement} = require("../brElement.js");
+
+
 //Colocar body
 const body = document.body;
 
@@ -21,8 +25,6 @@ const img = document.createElement('img');
 const text = document.createElement('p');
 //Div para texto
 const textDiv = document.createElement('div');
-//create break
-const br = document.createElement('br');
 
 
 //div para colocar pregunta
@@ -73,6 +75,10 @@ divQ.append(bold);
 divQ.append(btnNext);
 btnNext.append("Siguiente");
 btnNext.setAttribute('id', 'nextBtn');
+
+divQ.append(brElement());
+divQ.append(brElement());
+divQ.append(bar(12.5));
 
 
 document.getElementById("nextBtn").onclick = function () {

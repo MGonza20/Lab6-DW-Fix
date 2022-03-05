@@ -1,5 +1,8 @@
 import imgNYC from "../images/ny.png";
 
+const {bar} = require("../bar.js");
+const {brElement} = require("../brElement.js");
+
 //Colocar body
 const body = document.body;
 //Hacer un div para colocar elementos
@@ -18,9 +21,13 @@ div.append(divTitle);
 divTitle.append(title);
 title.append('¡Bienvenid@ a NYC!');
 div.append(imgD);
-imgD.append(img);
 
-img.setAttribute('src', {imgNYC});
+
+img.setAttribute('src', imgNYC);
 img.setAttribute('width', '600px');
+imgD.appendChild(img);
+imgD.append(brElement());
+imgD.append(brElement());
+imgD.append(bar(100));
 
 

@@ -20,13 +20,33 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/bar.js":
+/*!********************!*\
+  !*** ./src/bar.js ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"bar\": () => (/* binding */ bar)\n/* harmony export */ });\nconst bar = (val) => {\r\n\r\n    let bar = document.createElement('progress');\r\n    bar.setAttribute('value', `${val}`);\r\n    bar.setAttribute('max', '100');\r\n    bar.append(`${val}%`);\r\n\r\n    return bar;\r\n}\n\n//# sourceURL=webpack://Lab6.1/./src/bar.js?");
+
+/***/ }),
+
+/***/ "./src/brElement.js":
+/*!**************************!*\
+  !*** ./src/brElement.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"brElement\": () => (/* binding */ brElement)\n/* harmony export */ });\nconst brElement = () => {\r\n\r\n    const brElement = document.createElement('br');\r\n    return brElement;\r\n}\n\n//# sourceURL=webpack://Lab6.1/./src/brElement.js?");
+
+/***/ }),
+
 /***/ "./src/page11/done.js":
 /*!****************************!*\
   !*** ./src/page11/done.js ***!
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _images_misionCumplida_gif__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/misionCumplida.gif */ \"./src/images/misionCumplida.gif\");\n\n\n//Colocar body\nconst body = document.body;\n\n//Hacer un div para colocar elementos\nconst div = document.createElement('div');\n\nconst divTitle = document.createElement('div');\n\n//Crear elemento para colocar titulo\nconst title = document.createElement('h1');\n\n//Crear elemento para img\nconst img = document.createElement('img');\n\n//create break\nconst br = document.createElement('br');\n\n\n\n//div para colocar pregunta\nconst divQ = document.createElement('div');\nconst btnTrip = document.createElement('button');\nconst imgD = document.createElement('div');\n\nbody.append(div);\n\n//Colocar titulo\ndiv.append(divTitle);\ndivTitle.append(title);\ntitle.append('Mision cumplida');\n\n\ndiv.append(imgD);\n\n\nimgD.append(img);\nimg.setAttribute('src', {imgDone: _images_misionCumplida_gif__WEBPACK_IMPORTED_MODULE_0__[\"default\"]});\nimg.setAttribute('width', '400px');\n\n\nbody.append(divQ);\ndivQ.append(br);\ndivQ.append(btnTrip);\nbtnTrip.append(\"Viajar a NYC\");\nbtnTrip.setAttribute('id', 'tripBtn');\n\n\ndocument.getElementById(\"tripBtn\").onclick = function () {\n    location.href = \"../bundle/page12.html\";\n};\n\n\ndivQ.setAttribute('id', 'divQ');\ndivTitle.setAttribute('id', 'divT');\n\n//# sourceURL=webpack://Lab6.1/./src/page11/done.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _images_misionCumplida_gif__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/misionCumplida.gif */ \"./src/images/misionCumplida.gif\");\n\n\nconst {bar} = __webpack_require__(/*! ../bar.js */ \"./src/bar.js\");\nconst {brElement} = __webpack_require__(/*! ../brElement.js */ \"./src/brElement.js\");\n\n//Colocar body\nconst body = document.body;\n\n//Hacer un div para colocar elementos\nconst div = document.createElement('div');\n\nconst divTitle = document.createElement('div');\n\n//Crear elemento para colocar titulo\nconst title = document.createElement('h1');\n\n//Crear elemento para img\nconst img = document.createElement('img');\n\n\n//div para colocar pregunta\nconst divQ = document.createElement('div');\nconst btnTrip = document.createElement('button');\nconst imgD = document.createElement('div');\n\nbody.append(div);\n\n//Colocar titulo\ndiv.append(divTitle);\ndivTitle.append(title);\ntitle.append('Mision cumplida');\n\n\ndiv.append(imgD);\n\n\n\nimg.setAttribute('src', _images_misionCumplida_gif__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\nimg.setAttribute('width', '400px');\nimgD.appendChild(img);\n\n\nbody.append(divQ);\ndivQ.append(brElement());\ndivQ.append(btnTrip);\ndivQ.append(brElement());\ndivQ.append(brElement());\ndivQ.append(bar(85));\nbtnTrip.append(\"Viajar a NYC\");\nbtnTrip.setAttribute('id', 'tripBtn');\n\n\ndocument.getElementById(\"tripBtn\").onclick = function () {\n    location.href = \"../bundle/page12.html\";\n};\n\n\ndivQ.setAttribute('id', 'divQ');\ndivTitle.setAttribute('id', 'divT');\n\n//# sourceURL=webpack://Lab6.1/./src/page11/done.js?");
 
 /***/ })
 

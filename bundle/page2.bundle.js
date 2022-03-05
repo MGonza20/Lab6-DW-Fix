@@ -20,13 +20,33 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/bar.js":
+/*!********************!*\
+  !*** ./src/bar.js ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"bar\": () => (/* binding */ bar)\n/* harmony export */ });\nconst bar = (val) => {\r\n\r\n    let bar = document.createElement('progress');\r\n    bar.setAttribute('value', `${val}`);\r\n    bar.setAttribute('max', '100');\r\n    bar.append(`${val}%`);\r\n\r\n    return bar;\r\n}\n\n//# sourceURL=webpack://Lab6.1/./src/bar.js?");
+
+/***/ }),
+
+/***/ "./src/brElement.js":
+/*!**************************!*\
+  !*** ./src/brElement.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"brElement\": () => (/* binding */ brElement)\n/* harmony export */ });\nconst brElement = () => {\r\n\r\n    const brElement = document.createElement('br');\r\n    return brElement;\r\n}\n\n//# sourceURL=webpack://Lab6.1/./src/brElement.js?");
+
+/***/ }),
+
 /***/ "./src/page2/scriptCallRadio.js":
 /*!**************************************!*\
   !*** ./src/page2/scriptCallRadio.js ***!
   \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _images_IWoon_gif__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/IWoon.gif */ \"./src/images/IWoon.gif\");\n\n\n//Colocar body\nconst body = document.body;\n\n//Hacer un div para colocar elementos\nconst div = document.createElement('div');\n\nconst divTitle = document.createElement('div');\n\n//Crear elemento para colocar titulo\nconst title = document.createElement('h1');\n\n//Crear elemento para subtitulo \nconst subtitle = document.createElement('h2');\n\n//Crear elemento para img\nconst img = document.createElement('img');\n\n//Crear elemento para colocar texto\nconst text = document.createElement('p');\n//Div para texto\nconst textDiv = document.createElement('div');\n//create break\nconst br = document.createElement('br');\n\n\n//div para colocar pregunta\nconst divQ = document.createElement('div');\nconst btnNext = document.createElement('button');\n//tag bold para pregunta\nconst bold = document.createElement('b');\nconst imgD = document.createElement('div');\n\n\n\nbody.append(div);\n\n//Colocar titulo\ndiv.append(divTitle);\ndivTitle.append(title);\ntitle.append('¡Haz ganado!');\n\n\ndiv.append(imgD);\n\n\n\n//Colocar div donde se colocara texto\ndiv.append(textDiv);\n//Colocar texto dentro del div de texto\ntextDiv.append(text);\n\n\n\ntext.append('Tu llamada ha entrado a la radio y el locutor te dice: \\\n    \"¡Felicidades! Haz sido uno de los 3 afortunados. Debes ir a la \\\n    bibliblioteca central mañana a las 3:00 p.m. cuando estes ahí la \\\n    bibliotecaria te dará un listado de cosas que debes buscar, resolver \\\n    y obtener, estas serán pistas para poder reclamar tu boleto en la \\\n    agencia de viajes\"'); \n\n\n\n\nimg.setAttribute('src', _images_IWoon_gif__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\nimg.setAttribute('width', '245px');\nimgD.appendChild(img);\n\n//Pregunta\nbody.append(divQ);\ndivQ.append(bold);\ndivQ.append(btnNext);\nbtnNext.append(\"Siguiente\");\nbtnNext.setAttribute('id', 'nextBtn');\n\n\ndocument.getElementById(\"nextBtn\").onclick = function () {\n    location.href = \"../bundle/page4.html\";\n};\n\n\ndivQ.setAttribute('id', 'divQ');\ndivTitle.setAttribute('id', 'divT');\ntextDiv.setAttribute('id', 'divText');\nimgD.setAttribute('id', 'divImg');\ntext.setAttribute('id', 'text');\n\n\n\n//# sourceURL=webpack://Lab6.1/./src/page2/scriptCallRadio.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _images_IWoon_gif__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/IWoon.gif */ \"./src/images/IWoon.gif\");\n\n\nconst {bar} = __webpack_require__(/*! ../bar.js */ \"./src/bar.js\");\nconst {brElement} = __webpack_require__(/*! ../brElement.js */ \"./src/brElement.js\");\n\n\n//Colocar body\nconst body = document.body;\n\n//Hacer un div para colocar elementos\nconst div = document.createElement('div');\n\nconst divTitle = document.createElement('div');\n\n//Crear elemento para colocar titulo\nconst title = document.createElement('h1');\n\n//Crear elemento para subtitulo \nconst subtitle = document.createElement('h2');\n\n//Crear elemento para img\nconst img = document.createElement('img');\n\n//Crear elemento para colocar texto\nconst text = document.createElement('p');\n//Div para texto\nconst textDiv = document.createElement('div');\n\n\n//div para colocar pregunta\nconst divQ = document.createElement('div');\nconst btnNext = document.createElement('button');\n//tag bold para pregunta\nconst bold = document.createElement('b');\nconst imgD = document.createElement('div');\n\n\n\nbody.append(div);\n\n//Colocar titulo\ndiv.append(divTitle);\ndivTitle.append(title);\ntitle.append('¡Haz ganado!');\n\n\ndiv.append(imgD);\n\n\n\n//Colocar div donde se colocara texto\ndiv.append(textDiv);\n//Colocar texto dentro del div de texto\ntextDiv.append(text);\n\n\n\ntext.append('Tu llamada ha entrado a la radio y el locutor te dice: \\\n    \"¡Felicidades! Haz sido uno de los 3 afortunados. Debes ir a la \\\n    bibliblioteca central mañana a las 3:00 p.m. cuando estes ahí la \\\n    bibliotecaria te dará un listado de cosas que debes buscar, resolver \\\n    y obtener, estas serán pistas para poder reclamar tu boleto en la \\\n    agencia de viajes\"'); \n\n\n\n\nimg.setAttribute('src', _images_IWoon_gif__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\nimg.setAttribute('width', '245px');\nimgD.appendChild(img);\n\n//Pregunta\nbody.append(divQ);\ndivQ.append(bold);\ndivQ.append(btnNext);\nbtnNext.append(\"Siguiente\");\nbtnNext.setAttribute('id', 'nextBtn');\n\ndivQ.append(brElement());\ndivQ.append(brElement());\ndivQ.append(bar(12.5));\n\n\ndocument.getElementById(\"nextBtn\").onclick = function () {\n    location.href = \"../bundle/page4.html\";\n};\n\n\ndivQ.setAttribute('id', 'divQ');\ndivTitle.setAttribute('id', 'divT');\ntextDiv.setAttribute('id', 'divText');\nimgD.setAttribute('id', 'divImg');\ntext.setAttribute('id', 'text');\n\n\n\n//# sourceURL=webpack://Lab6.1/./src/page2/scriptCallRadio.js?");
 
 /***/ })
 

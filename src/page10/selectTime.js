@@ -1,5 +1,9 @@
 import imgTiktok from "../images/tiktok.gif";
 
+const {bar} = require("../bar.js");
+const {brElement} = require("../brElement.js");
+
+
 //Colocar body
 const body = document.body;
 
@@ -21,10 +25,6 @@ const img = document.createElement('img');
 const text = document.createElement('p');
 //Div para texto
 const textDiv = document.createElement('div');
-
-//create break
-const br = document.createElement('br');
-const br2 = document.createElement('br');
 
 //texto para subtitulo de pregunta
 const subQuestion = document.createElement('h2');
@@ -51,8 +51,9 @@ title.append('Tercera búsqueda. Encuentra la hora');
 div.append(imgD);
 
 
-imgD.append(img);
-img.setAttribute('src', {imgTiktok});
+
+img.setAttribute('src', imgTiktok);
+imgD.appendChild(img);
 
 //Colocar div donde se colocara texto
 div.append(textDiv);
@@ -63,20 +64,26 @@ text.append('Debes buscar estos libros y ver si en cuentras alguna pista en algu
 
 anchBooks.append('Ver libros');
 anchBooks.setAttribute('href', '../bundle/page9.html');
+text.append(brElement());
 text.append(anchBooks);
 
 
 //Pregunta
 body.append(divQ);
 divQ.append(bold);
-divQ.append(br);
+//divQ.append(brElement());
 divQ.append(btnTime1);
 btnTime1.append("8:00");
-divQ.append(br);
+divQ.append(brElement());
+divQ.append(brElement());
 divQ.append(btnTime2);
 btnTime2.append("12:00");
-divQ.append(br2);
+divQ.append(brElement());
+divQ.append(brElement());
 divQ.append(btnTime3);
+divQ.append(brElement());
+divQ.append(brElement());
+divQ.append(bar(62.5));
 btnTime3.append("9:00");
 bold.append(subQuestion);
 subQuestion.append('¿Cuál es la respuesta?');

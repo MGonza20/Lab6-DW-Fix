@@ -1,8 +1,10 @@
+import { brElement } from "../brElement";
 import imgLibrarian from "../images/librarian.jpeg";
+
+const {bar} = require("../bar.js");
 
 //Colocar body
 const body = document.body;
-
 
 //Hacer un div para colocar elementos
 const div = document.createElement('div');
@@ -22,10 +24,7 @@ const img = document.createElement('img');
 const text = document.createElement('p');
 //Div para texto
 const textDiv = document.createElement('div');
-//create break
-const br = document.createElement('br');
 
-const br2 = document.createElement('br');
 
 
 //div para colocar pregunta
@@ -41,8 +40,7 @@ const olElement = document.createElement('ol');
 const li1 = document.createElement('li');
 const li2 = document.createElement('li');
 const i = document.createElement('i');
-const br314 = document.createElement('br');
-const br315 = document.createElement('br');
+
 
 
 
@@ -73,9 +71,10 @@ text.append('En efecto la bibliotecaria te espera en la biblioteca central a las
 
 
 
-imgD.append(img);
-img.setAttribute('src', {imgLibrarian});
+
+img.setAttribute('src', imgLibrarian);
 img.setAttribute('width', '450px');
+imgD.appendChild(img);
 
 divQ.append(dets);
 dets.append(sum);
@@ -88,9 +87,9 @@ li2.append('¿A que se podrá referir la marca');
 i.append('"apple"');
 li2.append(i);
 li2.append('de la computadora?');
-li2.append(br314);
+li2.append(brElement());
 li2.append("* En el contexto del juego.");
-divQ.append(br315);
+divQ.append(brElement());
 
 //Pregunta
 body.append(divQ);
@@ -98,6 +97,9 @@ divQ.append(bold);
 divQ.append(btnNext);
 btnNext.append("Siguiente");
 btnNext.setAttribute('id', 'nextBtn');
+divQ.append(brElement());
+divQ.append(brElement());
+divQ.append(bar(25));
 
 
 

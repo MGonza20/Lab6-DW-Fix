@@ -20,13 +20,33 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/bar.js":
+/*!********************!*\
+  !*** ./src/bar.js ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"bar\": () => (/* binding */ bar)\n/* harmony export */ });\nconst bar = (val) => {\r\n\r\n    let bar = document.createElement('progress');\r\n    bar.setAttribute('value', `${val}`);\r\n    bar.setAttribute('max', '100');\r\n    bar.append(`${val}%`);\r\n\r\n    return bar;\r\n}\n\n//# sourceURL=webpack://Lab6.1/./src/bar.js?");
+
+/***/ }),
+
+/***/ "./src/brElement.js":
+/*!**************************!*\
+  !*** ./src/brElement.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"brElement\": () => (/* binding */ brElement)\n/* harmony export */ });\nconst brElement = () => {\r\n\r\n    const brElement = document.createElement('br');\r\n    return brElement;\r\n}\n\n//# sourceURL=webpack://Lab6.1/./src/brElement.js?");
+
+/***/ }),
+
 /***/ "./src/page12/welcomeToNYC.js":
 /*!************************************!*\
   !*** ./src/page12/welcomeToNYC.js ***!
   \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _images_ny_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/ny.png */ \"./src/images/ny.png\");\n\n\n//Colocar body\nconst body = document.body;\n//Hacer un div para colocar elementos\nconst div = document.createElement('div');\nconst divTitle = document.createElement('div');\n//Crear elemento para colocar titulo\nconst title = document.createElement('h1');\n//Crear elemento para img\nconst img = document.createElement('img');\nconst imgD = document.createElement('div');\n\n\nbody.append(div);\n//Colocar titulo\ndiv.append(divTitle);\ndivTitle.append(title);\ntitle.append('¡Bienvenid@ a NYC!');\ndiv.append(imgD);\nimgD.append(img);\n\nimg.setAttribute('src', {imgNYC: _images_ny_png__WEBPACK_IMPORTED_MODULE_0__[\"default\"]});\nimg.setAttribute('width', '600px');\n\n\n\n\n//# sourceURL=webpack://Lab6.1/./src/page12/welcomeToNYC.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _images_ny_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/ny.png */ \"./src/images/ny.png\");\n\n\nconst {bar} = __webpack_require__(/*! ../bar.js */ \"./src/bar.js\");\nconst {brElement} = __webpack_require__(/*! ../brElement.js */ \"./src/brElement.js\");\n\n//Colocar body\nconst body = document.body;\n//Hacer un div para colocar elementos\nconst div = document.createElement('div');\nconst divTitle = document.createElement('div');\n//Crear elemento para colocar titulo\nconst title = document.createElement('h1');\n//Crear elemento para img\nconst img = document.createElement('img');\nconst imgD = document.createElement('div');\n\n\nbody.append(div);\n//Colocar titulo\ndiv.append(divTitle);\ndivTitle.append(title);\ntitle.append('¡Bienvenid@ a NYC!');\ndiv.append(imgD);\n\n\nimg.setAttribute('src', _images_ny_png__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\nimg.setAttribute('width', '600px');\nimgD.appendChild(img);\nimgD.append(brElement());\nimgD.append(brElement());\nimgD.append(bar(100));\n\n\n\n\n//# sourceURL=webpack://Lab6.1/./src/page12/welcomeToNYC.js?");
 
 /***/ })
 
