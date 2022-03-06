@@ -66,7 +66,7 @@ textDiv.append(text);
 text.append('Debes buscar estos libros y ver si en cuentras alguna pista en alguno de ellos.');
 
 anchBooks.append('Ver libros');
-anchBooks.setAttribute('href', '../bundle/page9.html');
+anchBooks.setAttribute('href', '../page9.html');
 text.append(brElement());
 text.append(anchBooks);
 
