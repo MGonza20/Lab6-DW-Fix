@@ -69,7 +69,7 @@ text.append('En efecto la bibliotecaria te espera en la biblioteca central a las
             Te pide un momento para poder imprimir desde su computadora apple la lista de \
             pistas que debes buscar. Al momento de darte la lista te indica que debes encontrar \
             la fecha y hora del viaje con las pistas. Pero lo primero que debes hacer es seleccionar \
-            de la estanteria una de las revistas con portada de la ciudad a la que crees que iras".'); 
+            de la estanteria una de las revistas con portada de la ciudad a la que crees que iras.'); 
 
 
 
