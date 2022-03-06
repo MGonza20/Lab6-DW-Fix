@@ -63,7 +63,7 @@ title.append('Elige una revista');
 
 
 fig1.append(anch1);
-anch1.setAttribute('href', '../bundle/page6.html');
+anch1.setAttribute('href', '../page6.html');
 img1.setAttribute('src', imgMag1);
 img1.setAttribute('width', '300');
 anch1.appendChild(img1);
@@ -73,7 +73,7 @@ fig1.append("Viajes, Toscana");
 
 
 fig2.append(anch2);
-anch2.setAttribute('href', '../bundle/page7.html');
+anch2.setAttribute('href', '../page7.html');
 img2.setAttribute('src', imgMag2);
 img2.setAttribute('width', '300');
 anch2.appendChild(img2);
@@ -82,7 +82,7 @@ fig2.append("The New Yorker, New York");
 
 
 fig3.append(anch3);
-anch3.setAttribute('href', '../bundle/page6.html');
+anch3.setAttribute('href', '../page6.html');
 img3.setAttribute('src', imgMag3);
 img3.setAttribute('width', '300');
 anch3.append(img3);

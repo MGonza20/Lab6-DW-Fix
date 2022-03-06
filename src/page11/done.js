@@ -54,7 +54,7 @@ btnTrip.setAttribute('id', 'tripBtn');
 
 
 document.getElementById("tripBtn").onclick = function () {
-    location.href = "../bundle/page12.html";
+    location.href = "../page12.html";
 };
 
 

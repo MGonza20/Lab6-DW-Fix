@@ -96,15 +96,15 @@ btnTime3.setAttribute('id', 'time3Btn');
 
 
 document.getElementById("time1Btn").onclick = function () {
-    location.href = "../bundle/page8.html";
+    location.href = "../page8.html";
 };
 
 document.getElementById("time2Btn").onclick = function () {
-    location.href = "../bundle/page11.html";
+    location.href = "../page11.html";
 };
 
 document.getElementById("time3Btn").onclick = function () {
-    location.href = "../bundle/page8.html";
+    location.href = "../page8.html";
 };
 
 divQ.setAttribute('id', 'divQ');

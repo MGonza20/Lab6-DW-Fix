@@ -87,5 +87,5 @@ backBtn.append("back");
 backBtn.setAttribute('id', 'backBtn');
 
 document.getElementById("backBtn").onclick = function () {
-    location.href = "../bundle/page10.html";
+    location.href = "../page10.html";
 };

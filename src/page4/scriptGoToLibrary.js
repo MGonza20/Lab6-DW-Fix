@@ -107,7 +107,7 @@ divQ.append(bar(25));
 
 
 document.getElementById("nextBtn").onclick = function () {
-    location.href = "../bundle/page5.html";
+    location.href = "../page5.html";
 };
 
 divQ.setAttribute('id', 'divQ');

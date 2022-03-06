@@ -85,7 +85,7 @@ divQ.append(bar(12.5));
 
 
 document.getElementById("nextBtn").onclick = function () {
-    location.href = "../bundle/page4.html";
+    location.href = "../page4.html";
 };
 
 

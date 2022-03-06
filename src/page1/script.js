@@ -90,11 +90,11 @@ divQ.append(bar(0));
 
 
 document.getElementById("yesBtn").onclick = function () {
-    location.href = "../bundle/page2.html";
+    location.href = "../page2.html";
 };
 
 document.getElementById("nopBtn").onclick = function () {
-    location.href = "../bundle/page3.html";
+    location.href = "../page3.html";
 };
 
 divQ.setAttribute('id', 'divQ');

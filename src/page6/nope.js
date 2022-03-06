@@ -49,7 +49,7 @@ btnBack.setAttribute('id', 'backBtn');
 
 
 document.getElementById("backBtn").onclick = function () {
-    location.href = "../bundle/page5.html";
+    location.href = "../page5.html";
 };
 
 
