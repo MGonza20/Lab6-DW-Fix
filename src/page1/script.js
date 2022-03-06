@@ -4,6 +4,11 @@ import "../orderDivs.scss";
 const {bar} = require("../bar.js");
 const {brElement} = require("../brElement.js");
 
+
+
+
+
+
 //Colocar body
 const body = document.body; 
 
