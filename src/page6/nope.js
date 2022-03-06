@@ -29,7 +29,7 @@ body.append(div);
 //Colocar titulo
 div.append(divTitle);
 divTitle.append(title);
-title.append('Esta pista no te lleva a la sisguiente...');
+title.append('Esta pista no te lleva a la siguiente...');
 
 
 div.append(imgD);

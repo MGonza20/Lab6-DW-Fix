@@ -37,7 +37,7 @@ btnTrip.setAttribute('id', 'backBtn');
 
 
 document.getElementById("backBtn").onclick = function () {
-    location.href = "../bundle/page1.html";
+    location.href = "../bundle/index.html";
 };
 
 

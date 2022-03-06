@@ -28,7 +28,7 @@ module.exports = {
       
       new HtmlWebpackPlugin({
         template: "./src/page1/index.html",
-        filename: "page1.html",
+        filename: "index.html",
         chunks: ['page1']
       }),
 
