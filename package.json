@@ -5,12 +5,18 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "start": "webpack"
+    "start": "webpack",
+    "run-babel": "babel src -d output_babel"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
     "css-loader": "^5.2.7",
     "file-loader": "^6.2.0",
     "html-loader": "^3.1.0",
